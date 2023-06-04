@@ -290,3 +290,71 @@ header.sticky {
   transform: translateY(-0.8rem);
   cursor: pointer;
 }
+
+/* Portfolio Style  */
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 8rem;
+}
+.row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+.row img {
+  width: 100%;
+  border-radius: 0.8rem;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #ffff00);
+  color: var(--bg-color);
+  position: absolute;
+  border-radius: 0.8rem;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+  transition: height 0.5s;
+}
+.layer h5 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.layer p {
+  color: var(--bg-color);
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.layer i {
+  color: #8a8a06;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  background: var(--text-color);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.row:hover img {
+  transform: scale(1.1);
+}
+.row:hover .layer {
+  height: 100%;
+}

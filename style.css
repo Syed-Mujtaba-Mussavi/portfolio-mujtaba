@@ -442,3 +442,23 @@ form textarea {
   transform: scale(1.1);
   cursor: pointer;
 }
+.end {
+  padding: 2rem 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  background: var(--bg-color);
+}
+.last-text p {
+  color: var(--second-color);
+  font-size: 1.4rem;
+}
+.top i {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  color: var(--bg-color);
+  background: var(--main-color);
+}

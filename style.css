@@ -7,13 +7,63 @@
   list-style: none;
   scroll-behavior: smooth;
 }
+html {
+  font-size: 62.5%;
+}
 :root {
   --bg-color: #2a2a2a;
   --second-bg-color: #202020;
   --text-color: #fff;
   --second-color: #ccc;
-  --main-color: #ea1339;
+  /* --main-color: #ea1339; */
+  --main-color: yellow;
   --big-font: 5rem;
   --h2-font: 3rem;
   --p-font: 1.1rem;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 2.2rem 15%;
+  border-bottom: 0.1rem solid transparent;
+  transition: all 0.45s ease;
+}
+.logo img {
+  width: 6rem;
+  height: 6rem;
+}
+.navlist {
+  display: flex;
+}
+.navlist a {
+  color: var(--second-color);
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0 2.5rem;
+  transition: all 0.45s ease;
+}
+.navlist a:hover {
+  color: var(--main-color);
+}
+.navlist a.active {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 3.5rem;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 2.5rem;
+  display: none;
 }
